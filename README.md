@@ -1,6 +1,6 @@
 # Dynamic Price Prediction System: A/B Testing & Cannibalization Simulator
 
-**Simulate Price Experiments • Understand Cannibalization Effects • Optimize Multi-SKU Portfolios**
+**Dynamic Pricing Intelligence • Portfolio Optimization • Market Simulation**
 
 ---
 
@@ -52,8 +52,8 @@ In multi-SKU environments, individual price changes can shift demand across prod
 - **Estimate Own-Price Elasticity**: Per-SKU historical sensitivity using log-log fits.
 - **Cross-Elasticity Matrix**: Simple rules or user-uploaded matrices to govern cannibalization intensity across SKUs.
 - **Portfolio Simulation**: For any candidate price changes, forecasts both:
-    - Direct demand/revenue shifts
-    - Indirect cannibalization effects (demand redistributed to/from related products)
+  - Direct demand/revenue shifts
+  - Indirect cannibalization effects (demand redistributed to/from related products)
 - **A/B Comparison**: Simulate “holdout” vs. “test” scenarios and run paired t-tests on simulated revenue uplift.
 
 ---
@@ -72,7 +72,7 @@ Upload or generate a CSV with these columns:
 | `competitor_price`  | float   | (optional) Best or average competitor price        |
 | `discount_pct`      | float   | (optional) Discount relative to base price (%)     |
 | `seasonality`       | float   | (optional) Time-based index                        |
-| `true_elasticity`   | float   | (optional) Known elasticity (used in synthetic data)|
+| `true_elasticity`   | float   | (optional) Known elasticity(used in synthetic data)|
 
 Use provided `dataset_generation.py` for a quickstart with reproducible demo data.
 
